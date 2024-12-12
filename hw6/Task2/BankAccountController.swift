@@ -70,11 +70,13 @@ class BankAccountController: UIViewController {
         }
     }
     
+    let bankAccount = BankAccount()
+    
     @objc func simulateRaceConditionButtonTapped() {
-        simulateRaceCondition()
+        bankAccount.simulateRaceCondition()
     }
         
     @objc func simulateThreadSafeWithdrawalsButtonTapped() {
-        simulateThreadSafeWithdrawals()
+        bankAccount.simulateThreadSafeWithdrawals()
     }
 }

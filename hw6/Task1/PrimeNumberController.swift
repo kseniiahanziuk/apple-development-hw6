@@ -48,11 +48,13 @@ class PrimeNumberController: UIViewController {
         }
     }
     
+    let primeChecker = PrimeNumberChecker()
+    
     @objc private func checkPrimesButtonTapped() {
         let numbers = Array(1...10000)
         let numberOfTasks = 4
         
-        findPrimesConcurrently(from: numbers, numberOfTasks: numberOfTasks) { primes in
+        primeChecker.findPrimesConcurrently(from: numbers, numberOfTasks: numberOfTasks) { primes in
             DispatchQueue.main.async {
                 self.resultTextView.text = "Prime numbers:\n" + primes.map { String($0) }.joined(separator: "\n")
             }

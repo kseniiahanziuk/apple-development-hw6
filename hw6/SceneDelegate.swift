@@ -11,8 +11,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         // Comment and uncomment whatever controller you need.
-        // let currentViewController = PrimeNumberController()
-        let currentViewController = BankAccountController()
+        let currentViewController = PrimeNumberController()
+        // let currentViewController = BankAccountController()
+        // let currentViewController = ImageProcessingController()
+        // let currentViewController = GraphProcessingController()
         
         window?.rootViewController = currentViewController
         

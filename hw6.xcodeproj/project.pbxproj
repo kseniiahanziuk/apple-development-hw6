@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E55F9612D0B45C30049D7D5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E55F9602D0B45C30049D7D5 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5E55F91F2D0B2D1D0049D7D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -58,6 +62,11 @@
 			path = hw6UITests;
 			sourceTree = "<group>";
 		};
+		5E55F96F2D0B79D20049D7D5 /* Images */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E55F9612D0B45C30049D7D5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,10 +98,11 @@
 		5E55F8FF2D0B2D1A0049D7D5 = {
 			isa = PBXGroup;
 			children = (
-				5E55F90A2D0B2D1A0049D7D5 /* hw6 */,
+				5E55F96F2D0B79D20049D7D5 /* Images */,
 				5E55F9212D0B2D1D0049D7D5 /* hw6Tests */,
 				5E55F92B2D0B2D1D0049D7D5 /* hw6UITests */,
 				5E55F9092D0B2D1A0049D7D5 /* Products */,
+				5E55F90A2D0B2D1A0049D7D5 /* hw6 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +134,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5E55F90A2D0B2D1A0049D7D5 /* hw6 */,
+				5E55F96F2D0B79D20049D7D5 /* Images */,
 			);
 			name = hw6;
 			packageProductDependencies = (
+				5E55F9602D0B45C30049D7D5 /* SnapKit */,
 			);
 			productName = hw6;
 			productReference = 5E55F9082D0B2D1A0049D7D5 /* hw6.app */;
@@ -213,6 +226,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5E55F93C2D0B2D2E0049D7D5 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+				5E55F95F2D0B45C30049D7D5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E55F9092D0B2D1A0049D7D5 /* Products */;
@@ -597,6 +611,14 @@
 				minimumVersion = 0.57.1;
 			};
 		};
+		5E55F95F2D0B45C30049D7D5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -614,6 +636,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5E55F93C2D0B2D2E0049D7D5 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		5E55F9602D0B45C30049D7D5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E55F95F2D0B45C30049D7D5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
